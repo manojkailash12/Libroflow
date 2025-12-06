@@ -1,0 +1,124 @@
+{
+  "books": [
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "isbn": "9780743273565",
+      "category": "Fiction",
+      "total": 5,
+      "available": 5
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "isbn": "9780061120084",
+      "category": "Fiction",
+      "total": 3,
+      "available": 3
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "isbn": "9780451524935",
+      "category": "Fiction",
+      "total": 4,
+      "available": 4
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "isbn": "9780141439518",
+      "category": "Fiction",
+      "total": 3,
+      "available": 3
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "isbn": "9780316769174",
+      "category": "Fiction",
+      "total": 4,
+      "available": 4
+    },
+    {
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "isbn": "9780553380163",
+      "category": "Science",
+      "total": 2,
+      "available": 2
+    },
+    {
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "isbn": "9780062316097",
+      "category": "History",
+      "total": 3,
+      "available": 3
+    },
+    {
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "isbn": "9780132350884",
+      "category": "Technology",
+      "total": 5,
+      "available": 5
+    },
+    {
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt",
+      "isbn": "9780135957059",
+      "category": "Technology",
+      "total": 4,
+      "available": 4
+    },
+    {
+      "title": "Educated",
+      "author": "Tara Westover",
+      "isbn": "9780399590504",
+      "category": "Biography",
+      "total": 3,
+      "available": 3
+    },
+    {
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "isbn": "9781524763138",
+      "category": "Biography",
+      "total": 4,
+      "available": 4
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "isbn": "9780374533557",
+      "category": "Non-Fiction",
+      "total": 3,
+      "available": 3
+    },
+    {
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "isbn": "9780307887894",
+      "category": "Non-Fiction",
+      "total": 2,
+      "available": 2
+    },
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "isbn": "9780735211292",
+      "category": "Non-Fiction",
+      "total": 5,
+      "available": 5
+    },
+    {
+      "title": "The Selfish Gene",
+      "author": "Richard Dawkins",
+      "isbn": "9780198788607",
+      "category": "Science",
+      "total": 2,
+      "available": 2
+    }
+  ]
+}
