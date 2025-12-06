@@ -31,6 +31,7 @@ const Profile = () => {
   })
   const [message, setMessage] = useState('')
   const [loading, setLoading] = useState(false)
+  const [passwordLoading, setPasswordLoading] = useState(false)
 
   const handleUpdateProfile = async (e) => {
     e.preventDefault()
@@ -38,7 +39,7 @@ const Profile = () => {
     setMessage('')
 
     try {
-      await axios.put('/api/auth/profile', formData)
+      await axios.put('/api/auth-profile', formData)
       setMessage('Profile updated successfully!')
     } catch (error) {
       setMessage(error.response?.data?.message || 'Failed to update profile')
@@ -57,10 +58,15 @@ const Profile = () => {
       return
     }
 
-    setLoading(true)
+    if (passwordData.newPassword.length < 6) {
+      setMessage('New password must be at least 6 characters')
+      return
+    }
+
+    setPasswordLoading(true)
 
     try {
-      await axios.put('/api/auth/change-password', {
+      await axios.put('/api/auth-change-password', {
         currentPassword: passwordData.currentPassword,
         newPassword: passwordData.newPassword
       })
@@ -69,7 +75,7 @@ const Profile = () => {
     } catch (error) {
       setMessage(error.response?.data?.message || 'Failed to change password')
     } finally {
-      setLoading(false)
+      setPasswordLoading(false)
       setTimeout(() => setMessage(''), 3000)
     }
   }
@@ -182,8 +188,8 @@ const Profile = () => {
                   />
                 </div>
 
-                <button type="submit" className="btn btn-primary" disabled={loading}>
-                  {loading ? 'Changing...' : 'Change Password'}
+                <button type="submit" className="btn btn-primary" disabled={passwordLoading}>
+                  {passwordLoading ? 'Changing...' : 'Change Password'}
                 </button>
               </form>
             </div>

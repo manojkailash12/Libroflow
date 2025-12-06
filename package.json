@@ -13,7 +13,13 @@
     "create-librarian": "node scripts/create-first-librarian.js",
     "get-otp": "node scripts/get-otp.js",
     "add-books": "node scripts/add-sample-books.js",
-    "check-librarian": "node scripts/check-librarian.js"
+    "check-librarian": "node scripts/check-librarian.js",
+    "test-deployed": "node scripts/test-deployed-site.js",
+    "diagnose": "node scripts/diagnose-login.js",
+    "verify-functions": "node scripts/verify-functions.js",
+    "verify-endpoints": "node scripts/verify-api-endpoints.js",
+    "test-profile": "node scripts/test-profile-update.js",
+    "test-password": "node scripts/test-password-change.js"
   },
   "dependencies": {
     "axios": "^1.6.7",
